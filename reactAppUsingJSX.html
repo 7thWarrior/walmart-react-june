@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+    <h1> Welcome to React</h1>
+    <div id="root"></div>
+    <script type="text/babel">
+        // translation -- > JSX -> js
+        // compilation errors in JSX ; compile -- compiler;
+        // transpiler -- babel
+         var rootElement = document.getElementById("root");
+        // JSX 
+        var divElement=<div>
+            <h2>Welcome to Spring People</h2>
+            <a href ="https://www.walmart.com/plus">Go to Walmart </a>
+            </div>;
+            ReactDOM.render(divElement,rootElement);
+    </script>
+</body>
+</html>

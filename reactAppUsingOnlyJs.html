@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+</head>
+<body>
+    <h1> Welcome to React</h1>
+    <div id="root"></div>
+
+    <script>
+
+        // createElement -- which element; attributes; child
+        //<h2>Welcome to spring people</h2>
+        var h2Element=React.createElement("h2",null,"Welcome to Spring People");
+
+        //<a href ="https://www.walmart.com/plus">Go to Walamart </a>
+        var a1Element =React.createElement("a",{"href":"https://www.walmart.com/plus"},"Go to Walmart");
+
+        var divElement= React.createElement("div",null,[h2Element,a1Element])
+
+        var rootElement = document.getElementById("root");
+
+
+        // REACT -- return the virtual DOM
+        // render -- 2 parameters --what to render; where to render
+        ReactDOM.render(divElement,rootElement);
+    </script>
+
+</body>
+</html>
